@@ -36,13 +36,13 @@ const faqs = [
 
 const FAQSection = () => {
   return (
-    <section id="faq" className="section-padding bg-brand-light">
+    <section id="faq" className="section-padding bg-white">
       <div className="container-custom">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-brand-dark mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-brand-blue mb-4">
             Frequently Asked Questions
           </h2>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-brand-blue/70">
             Get answers to common questions about our service.
           </p>
         </div>
@@ -51,10 +51,10 @@ const FAQSection = () => {
           <Accordion type="single" collapsible className="w-full">
             {faqs.map((faq, index) => (
               <AccordionItem key={index} value={`item-${index}`} className="border-b border-gray-200">
-                <AccordionTrigger className="text-left text-lg font-medium text-brand-dark py-5 hover:text-brand-blue">
+                <AccordionTrigger className="text-left text-lg font-medium text-brand-blue py-5 hover:text-brand-blue/80">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-gray-600 pb-5 pt-1">
+                <AccordionContent className="text-brand-blue/70 pb-5 pt-1">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
@@ -63,12 +63,12 @@ const FAQSection = () => {
         </div>
 
         <div className="text-center mt-12">
-          <p className="text-gray-600 mb-6">
+          <p className="text-brand-blue/70 mb-6">
             Still have questions? We're here to help!
           </p>
           <a 
             href="mailto:support@mechconnect.com" 
-            className="inline-flex items-center text-brand-blue hover:text-brand-blue/90 font-medium"
+            className="inline-flex items-center text-brand-blue hover:text-brand-blue/80 font-medium"
           >
             Contact Support
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">

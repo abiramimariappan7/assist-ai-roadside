@@ -28,20 +28,20 @@ const testimonials = [
 
 const TestimonialsSection = () => {
   return (
-    <section id="testimonials" className="section-padding bg-white">
+    <section id="testimonials" className="section-padding bg-brand-cream">
       <div className="container-custom">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-brand-dark mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-brand-blue mb-4">
             What Our Users Say
           </h2>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-brand-blue/70">
             Trusted by thousands of vehicle owners and mechanics across the country.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="border-gray-100 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+            <Card key={index} className="border-gray-100 shadow-sm hover:shadow-md transition-shadow overflow-hidden bg-white">
               <CardContent className="p-6 flex flex-col h-full">
                 <div className="mb-6 flex-grow">
                   <div className="flex text-yellow-500 mb-4">
@@ -51,7 +51,7 @@ const TestimonialsSection = () => {
                       </svg>
                     ))}
                   </div>
-                  <p className="text-gray-600 italic">"{testimonial.quote}"</p>
+                  <p className="text-brand-blue/70 italic">"{testimonial.quote}"</p>
                 </div>
                 <div className="flex items-center mt-4">
                   <img 
@@ -60,8 +60,8 @@ const TestimonialsSection = () => {
                     className="h-12 w-12 rounded-full mr-4"
                   />
                   <div>
-                    <h4 className="font-semibold text-brand-dark">{testimonial.name}</h4>
-                    <p className="text-sm text-gray-500">{testimonial.title}</p>
+                    <h4 className="font-semibold text-brand-blue">{testimonial.name}</h4>
+                    <p className="text-sm text-brand-blue/60">{testimonial.title}</p>
                   </div>
                 </div>
               </CardContent>
@@ -69,24 +69,24 @@ const TestimonialsSection = () => {
           ))}
         </div>
 
-        <div className="mt-16 bg-gradient-to-r from-brand-orange to-brand-orange/80 rounded-2xl p-8 md:p-12 shadow-lg text-white text-center">
+        <div className="mt-16 bg-gradient-to-r from-brand-blue to-brand-blue/80 rounded-2xl p-8 md:p-12 shadow-lg text-brand-cream text-center">
           <div className="max-w-2xl mx-auto">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">Join Our Growing Network</h3>
-            <p className="mb-8 text-white/90">
+            <p className="mb-8 text-brand-cream/90">
               Whether you're a vehicle owner seeking reliable service or a mechanic looking to grow your business, MechConnect is here for you.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <div className="bg-white/90 backdrop-blur rounded-xl p-6 text-center flex-1">
-                <div className="text-4xl font-bold text-brand-orange mb-2">25,000+</div>
-                <p className="text-gray-700">Vehicle Owners</p>
+              <div className="bg-brand-cream backdrop-blur rounded-xl p-6 text-center flex-1">
+                <div className="text-4xl font-bold text-brand-blue mb-2">25,000+</div>
+                <p className="text-brand-blue/70">Vehicle Owners</p>
               </div>
-              <div className="bg-white/90 backdrop-blur rounded-xl p-6 text-center flex-1">
-                <div className="text-4xl font-bold text-brand-orange mb-2">3,500+</div>
-                <p className="text-gray-700">Certified Mechanics</p>
+              <div className="bg-brand-cream backdrop-blur rounded-xl p-6 text-center flex-1">
+                <div className="text-4xl font-bold text-brand-blue mb-2">3,500+</div>
+                <p className="text-brand-blue/70">Certified Mechanics</p>
               </div>
-              <div className="bg-white/90 backdrop-blur rounded-xl p-6 text-center flex-1">
-                <div className="text-4xl font-bold text-brand-orange mb-2">98%</div>
-                <p className="text-gray-700">Satisfaction Rate</p>
+              <div className="bg-brand-cream backdrop-blur rounded-xl p-6 text-center flex-1">
+                <div className="text-4xl font-bold text-brand-blue mb-2">98%</div>
+                <p className="text-brand-blue/70">Satisfaction Rate</p>
               </div>
             </div>
           </div>

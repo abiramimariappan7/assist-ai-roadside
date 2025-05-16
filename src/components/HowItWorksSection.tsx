@@ -61,29 +61,29 @@ const HowItWorksSection = () => {
   ];
 
   return (
-    <section id="how-it-works" className="section-padding bg-brand-light">
+    <section id="how-it-works" className="section-padding bg-white">
       <div className="container-custom">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-brand-dark mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-brand-blue mb-4">
             How MechConnect Works
           </h2>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-brand-blue/70">
             Our streamlined process makes it easy for both vehicle owners and mechanics to connect and solve problems fast.
           </p>
         </div>
 
         <Tabs defaultValue="vehicle-owner" className="w-full" onValueChange={setActiveTab}>
           <div className="flex justify-center mb-10">
-            <TabsList className="grid grid-cols-2 h-14 items-stretch bg-gray-100 w-full max-w-md">
+            <TabsList className="grid grid-cols-2 h-14 items-stretch bg-brand-cream/50 w-full max-w-md">
               <TabsTrigger 
                 value="vehicle-owner" 
-                className={`text-base rounded-l-lg ${activeTab === 'vehicle-owner' ? 'bg-brand-blue text-white data-[state=active]:bg-brand-blue data-[state=active]:text-white' : ''}`}
+                className={`text-base rounded-l-lg ${activeTab === 'vehicle-owner' ? 'bg-brand-blue text-brand-cream data-[state=active]:bg-brand-blue data-[state=active]:text-brand-cream' : ''}`}
               >
                 For Vehicle Owners
               </TabsTrigger>
               <TabsTrigger 
                 value="mechanic" 
-                className={`text-base rounded-r-lg ${activeTab === 'mechanic' ? 'bg-brand-blue text-white data-[state=active]:bg-brand-blue data-[state=active]:text-white' : ''}`}
+                className={`text-base rounded-r-lg ${activeTab === 'mechanic' ? 'bg-brand-blue text-brand-cream data-[state=active]:bg-brand-blue data-[state=active]:text-brand-cream' : ''}`}
               >
                 For Mechanics
               </TabsTrigger>
@@ -93,22 +93,22 @@ const HowItWorksSection = () => {
           <TabsContent value="vehicle-owner" className="mt-0">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {vehicleOwnerSteps.map((step, index) => (
-                <div key={index} className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+                <div key={index} className="bg-brand-cream rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100">
                   <div className="relative h-48">
                     <img src={step.image} alt={step.title} className="w-full h-full object-cover" />
-                    <div className="absolute top-4 left-4 bg-brand-blue text-white text-lg font-bold h-10 w-10 rounded-full flex items-center justify-center">
+                    <div className="absolute top-4 left-4 bg-brand-blue text-brand-cream text-lg font-bold h-10 w-10 rounded-full flex items-center justify-center">
                       {step.number}
                     </div>
                   </div>
                   <div className="p-6">
-                    <h3 className="text-xl font-semibold text-brand-dark mb-2">{step.title}</h3>
-                    <p className="text-gray-600">{step.description}</p>
+                    <h3 className="text-xl font-semibold text-brand-blue mb-2">{step.title}</h3>
+                    <p className="text-brand-blue/70">{step.description}</p>
                   </div>
                 </div>
               ))}
             </div>
             <div className="flex justify-center mt-10">
-              <Button className="bg-brand-blue hover:bg-brand-blue/90 text-white px-8 py-6 text-lg">
+              <Button className="bg-brand-blue hover:bg-brand-blue/90 text-brand-cream px-8 py-6 text-lg">
                 Download App
               </Button>
             </div>
@@ -117,22 +117,22 @@ const HowItWorksSection = () => {
           <TabsContent value="mechanic" className="mt-0">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {mechanicSteps.map((step, index) => (
-                <div key={index} className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+                <div key={index} className="bg-brand-cream rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100">
                   <div className="relative h-48">
                     <img src={step.image} alt={step.title} className="w-full h-full object-cover" />
-                    <div className="absolute top-4 left-4 bg-brand-orange text-white text-lg font-bold h-10 w-10 rounded-full flex items-center justify-center">
+                    <div className="absolute top-4 left-4 bg-brand-blue text-brand-cream text-lg font-bold h-10 w-10 rounded-full flex items-center justify-center">
                       {step.number}
                     </div>
                   </div>
                   <div className="p-6">
-                    <h3 className="text-xl font-semibold text-brand-dark mb-2">{step.title}</h3>
-                    <p className="text-gray-600">{step.description}</p>
+                    <h3 className="text-xl font-semibold text-brand-blue mb-2">{step.title}</h3>
+                    <p className="text-brand-blue/70">{step.description}</p>
                   </div>
                 </div>
               ))}
             </div>
             <div className="flex justify-center mt-10">
-              <Button variant="outline" className="border-brand-dark text-brand-dark hover:bg-brand-dark hover:text-white px-8 py-6 text-lg">
+              <Button variant="outline" className="border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-brand-cream px-8 py-6 text-lg">
                 Join as Mechanic
               </Button>
             </div>

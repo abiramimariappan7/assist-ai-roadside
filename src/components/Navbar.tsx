@@ -20,27 +20,27 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-5'}`}>
+    <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-brand-cream shadow-md py-3' : 'bg-transparent py-5'}`}>
       <div className="container-custom flex justify-between items-center">
         <div className="flex items-center">
           <a href="/" className="flex items-center">
-            <span className="text-2xl font-bold text-brand-dark">
-              Mech<span className="text-brand-blue">Connect</span>
+            <span className="text-2xl font-bold text-brand-blue">
+              Mech<span className="text-brand-blue/80">Connect</span>
             </span>
           </a>
         </div>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
-          <a href="#features" className="text-brand-dark hover:text-brand-blue transition-colors">Features</a>
-          <a href="#how-it-works" className="text-brand-dark hover:text-brand-blue transition-colors">How It Works</a>
-          <a href="#testimonials" className="text-brand-dark hover:text-brand-blue transition-colors">Testimonials</a>
-          <a href="#faq" className="text-brand-dark hover:text-brand-blue transition-colors">FAQ</a>
+          <a href="#features" className="text-brand-blue hover:text-brand-blue/80 transition-colors">Features</a>
+          <a href="#how-it-works" className="text-brand-blue hover:text-brand-blue/80 transition-colors">How It Works</a>
+          <a href="#testimonials" className="text-brand-blue hover:text-brand-blue/80 transition-colors">Testimonials</a>
+          <a href="#faq" className="text-brand-blue hover:text-brand-blue/80 transition-colors">FAQ</a>
           <div className="flex space-x-3">
-            <Button variant="outline" className="border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-white">
+            <Button variant="outline" className="border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-brand-cream">
               Join as Mechanic
             </Button>
-            <Button className="bg-brand-blue hover:bg-brand-blue/90 text-white">
+            <Button className="bg-brand-blue hover:bg-brand-blue/90 text-brand-cream">
               Download App
             </Button>
           </div>
@@ -48,7 +48,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <div className="md:hidden">
-          <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="text-brand-dark focus:outline-none">
+          <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="text-brand-blue focus:outline-none">
             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               {isMobileMenuOpen ? (
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -62,16 +62,16 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-white shadow-lg py-4 px-4 absolute w-full">
+        <div className="md:hidden bg-brand-cream shadow-lg py-4 px-4 absolute w-full">
           <div className="flex flex-col space-y-4">
-            <a href="#features" className="text-brand-dark hover:text-brand-blue transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Features</a>
-            <a href="#how-it-works" className="text-brand-dark hover:text-brand-blue transition-colors" onClick={() => setIsMobileMenuOpen(false)}>How It Works</a>
-            <a href="#testimonials" className="text-brand-dark hover:text-brand-blue transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Testimonials</a>
-            <a href="#faq" className="text-brand-dark hover:text-brand-blue transition-colors" onClick={() => setIsMobileMenuOpen(false)}>FAQ</a>
-            <Button variant="outline" className="border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-white w-full">
+            <a href="#features" className="text-brand-blue hover:text-brand-blue/80 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Features</a>
+            <a href="#how-it-works" className="text-brand-blue hover:text-brand-blue/80 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>How It Works</a>
+            <a href="#testimonials" className="text-brand-blue hover:text-brand-blue/80 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Testimonials</a>
+            <a href="#faq" className="text-brand-blue hover:text-brand-blue/80 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>FAQ</a>
+            <Button variant="outline" className="border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-brand-cream w-full">
               Join as Mechanic
             </Button>
-            <Button className="bg-brand-blue hover:bg-brand-blue/90 text-white w-full">
+            <Button className="bg-brand-blue hover:bg-brand-blue/90 text-brand-cream w-full">
               Download App
             </Button>
           </div>

@@ -37,13 +37,13 @@ const features = [
 
 const FeaturesSection = () => {
   return (
-    <section id="features" className="section-padding bg-white">
+    <section id="features" className="section-padding bg-brand-cream">
       <div className="container-custom">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-brand-dark mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-brand-blue mb-4">
             Powerful Features for Vehicle Owners & Mechanics
           </h2>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-brand-blue/70">
             Our app connects vehicle owners with qualified mechanics through innovative technology for a seamless roadside assistance experience.
           </p>
         </div>
@@ -57,8 +57,8 @@ const FeaturesSection = () => {
               <div className="bg-brand-blue/10 rounded-lg p-3 inline-block mb-5 group-hover:bg-brand-blue/20 transition-colors">
                 {feature.icon}
               </div>
-              <h3 className="text-xl font-semibold text-brand-dark mb-3">{feature.title}</h3>
-              <p className="text-gray-600">{feature.description}</p>
+              <h3 className="text-xl font-semibold text-brand-blue mb-3">{feature.title}</h3>
+              <p className="text-brand-blue/70">{feature.description}</p>
             </div>
           ))}
         </div>
@@ -66,8 +66,8 @@ const FeaturesSection = () => {
         <div className="mt-16 bg-gradient-to-r from-brand-blue to-brand-blue/80 rounded-2xl p-8 md:p-12 shadow-lg">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">AI-Powered Matching System</h3>
-              <p className="text-white/90 mb-6">
+              <h3 className="text-2xl md:text-3xl font-bold text-brand-cream mb-4">AI-Powered Matching System</h3>
+              <p className="text-brand-cream/90 mb-6">
                 Our advanced algorithm finds the perfect mechanic for your specific vehicle and issue, factoring in expertise, ratings, distance, and current traffic conditions.
               </p>
               <ul className="space-y-3">
@@ -77,8 +77,8 @@ const FeaturesSection = () => {
                   "Considers mechanic expertise with your specific issue",
                   "Smart traffic routing for optimal arrival times"
                 ].map((item, index) => (
-                  <li key={index} className="flex items-center text-white">
-                    <svg className="h-5 w-5 mr-2 text-brand-orange" fill="currentColor" viewBox="0 0 20 20">
+                  <li key={index} className="flex items-center text-brand-cream">
+                    <svg className="h-5 w-5 mr-2 text-brand-cream/80" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
                     {item}
@@ -92,7 +92,7 @@ const FeaturesSection = () => {
                 alt="Mechanic working on engine" 
                 className="rounded-lg shadow-xl"
               />
-              <div className="absolute -bottom-5 -right-5 bg-white p-4 rounded-lg shadow-lg">
+              <div className="absolute -bottom-5 -right-5 bg-brand-cream p-4 rounded-lg shadow-lg">
                 <div className="flex items-center gap-2">
                   <div className="relative">
                     <img 
@@ -103,10 +103,10 @@ const FeaturesSection = () => {
                     <span className="absolute -bottom-1 -right-1 bg-green-500 border-2 border-white h-4 w-4 rounded-full"></span>
                   </div>
                   <div>
-                    <p className="text-sm font-medium">John M.</p>
+                    <p className="text-sm font-medium text-brand-blue">John M.</p>
                     <div className="flex">
                       <span className="text-xs text-yellow-500">★★★★★</span>
-                      <span className="text-xs text-gray-500 ml-1">5.0</span>
+                      <span className="text-xs text-brand-blue/60 ml-1">5.0</span>
                     </div>
                   </div>
                 </div>
