@@ -18,13 +18,13 @@ const CTASection = () => {
                 Ready to Experience Roadside Assistance, Reimagined?
               </h2>
               <p className="text-brand-cream/90 text-lg mb-8">
-                Join thousands of satisfied vehicle owners and mechanics who are already using MechConnect to make roadside assistance faster, more transparent, and hassle-free.
+                Join thousands of satisfied vehicle owners and mechanics who are already using FixMyRide to make roadside assistance faster, more transparent, and hassle-free.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button className="bg-brand-cream hover:bg-brand-cream/90 text-brand-blue hover:text-brand-blue px-8 py-6 text-lg">
                   Download App
                 </Button>
-                <Button variant="outline" className="border-brand-cream text-brand-cream hover:bg-brand-cream/20 px-8 py-6 text-lg">
+                <Button variant="outline" className="border-brand-cream text-brand-cream hover:bg-brand-cream/20 px-8 py-6 text-lg font-medium">
                   Learn More
                 </Button>
               </div>

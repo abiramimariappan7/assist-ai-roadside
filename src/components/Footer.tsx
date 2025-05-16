@@ -12,7 +12,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center mb-6">
               <span className="text-2xl font-bold">
-                Mech<span className="text-brand-blue">Connect</span>
+                Fix<span className="text-brand-blue">MyRide</span>
               </span>
             </div>
             <p className="text-gray-300 mb-6">
@@ -69,7 +69,7 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 text-brand-blue mr-3 mt-1 flex-shrink-0" />
-                <span className="text-gray-300">123 Innovation Drive, San Francisco, CA 94103</span>
+                <span className="text-gray-300">123 Innovation Drive, Chennai, Tamil Nadu, India</span>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 text-brand-blue mr-3 flex-shrink-0" />
@@ -77,7 +77,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <MessageSquare className="h-5 w-5 text-brand-blue mr-3 flex-shrink-0" />
-                <span className="text-gray-300">support@mechconnect.com</span>
+                <span className="text-gray-300">support@fixmyride.com</span>
               </li>
             </ul>
           </div>
@@ -85,7 +85,7 @@ const Footer = () => {
         
         <div className="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 mb-4 md:mb-0">
-            &copy; {currentYear} MechConnect. All rights reserved.
+            &copy; {currentYear} FixMyRide. All rights reserved.
           </p>
           <div className="flex space-x-6">
             <a href="#" className="text-gray-400 hover:text-white text-sm">Download iOS App</a>

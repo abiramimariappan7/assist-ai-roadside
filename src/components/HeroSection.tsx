@@ -24,7 +24,7 @@ const HeroSection = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button className="bg-brand-blue hover:bg-brand-blue/90 text-brand-cream px-8 py-6 text-lg">
-                Download App
+                Download FixMyRide
               </Button>
               <Button variant="outline" className="border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-brand-cream px-8 py-6 text-lg">
                 Join as Mechanic
@@ -48,9 +48,9 @@ const HeroSection = () => {
           <div className="relative animate-fade-in animate-delay-200">
             <div className="relative z-10">
               <img 
-                src="https://images.unsplash.com/photo-1565043666747-69f6646db940?auto=format&fit=crop&w=600"
+                src="https://images.unsplash.com/photo-1565043666747-69f6646db940?auto=format&fit=crop&w=800&q=80"
                 alt="Mechanic helping car owner" 
-                className="rounded-lg shadow-2xl w-full"
+                className="rounded-lg shadow-2xl w-full h-auto object-cover aspect-[4/3]"
               />
             </div>
             <div className="absolute -bottom-6 -right-6 bg-brand-cream p-4 rounded-lg shadow-lg z-20">
