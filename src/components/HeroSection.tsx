@@ -2,6 +2,7 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Phone, MessageSquare, Clock } from 'lucide-react';
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const HeroSection = () => {
   return (
@@ -46,12 +47,14 @@ const HeroSection = () => {
             </div>
           </div>
           <div className="relative animate-fade-in animate-delay-200">
-            <div className="relative z-10">
-              <img 
-                src="https://images.unsplash.com/photo-1565043666747-69f6646db940?auto=format&fit=crop&w=800&q=80"
-                alt="Mechanic helping car owner" 
-                className="rounded-lg shadow-2xl w-full h-auto object-cover aspect-[4/3]"
-              />
+            <div className="relative z-10 overflow-hidden rounded-lg shadow-2xl">
+              <AspectRatio ratio={4/3} className="w-full">
+                <img 
+                  src="https://images.unsplash.com/photo-1565043666747-69f6646db940?auto=format&fit=crop&w=800&q=80"
+                  alt="Mechanic helping car owner" 
+                  className="w-full h-full object-cover"
+                />
+              </AspectRatio>
             </div>
             <div className="absolute -bottom-6 -right-6 bg-brand-cream p-4 rounded-lg shadow-lg z-20">
               <div className="flex items-center gap-3">
