@@ -66,7 +66,7 @@ const HeroSection = () => {
                 </div>
               </div>
             </div>
-            <div className="absolute -bottom-4 -left-4 md:-left-10 bg-brand-blue rounded-full h-24 w-24 flex items-center justify-center shadow-lg">
+            <div className="absolute -bottom-4 -left-4 md:-left-10 bg-brand-blue rounded-full h-24 w-24 flex items-center justify-center shadow-lg z-20">
               <div className="text-center text-brand-cream">
                 <div className="text-xl font-bold">4.9</div>
                 <div className="text-xs">★★★★★</div>
