@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { MapPin, Clock, DollarSign, MessageSquare, Users, Navigation } from 'lucide-react';
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const features = [
   {
@@ -87,11 +88,15 @@ const FeaturesSection = () => {
               </ul>
             </div>
             <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1486684228390-fbd351bb4711?auto=format&fit=crop&w=600" 
-                alt="Mechanic working on engine" 
-                className="rounded-lg shadow-xl"
-              />
+              <div className="overflow-hidden rounded-lg shadow-xl">
+                <AspectRatio ratio={3/2} className="w-full">
+                  <img 
+                    src="https://images.unsplash.com/photo-1486684228390-fbd351bb4711?auto=format&fit=crop&w=600" 
+                    alt="Mechanic working on engine" 
+                    className="w-full h-full object-cover"
+                  />
+                </AspectRatio>
+              </div>
               <div className="absolute -bottom-5 -right-5 bg-brand-cream p-4 rounded-lg shadow-lg">
                 <div className="flex items-center gap-2">
                   <div className="relative">

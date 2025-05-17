@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const HowItWorksSection = () => {
   const [activeTab, setActiveTab] = useState("vehicle-owner");
@@ -95,7 +96,9 @@ const HowItWorksSection = () => {
               {vehicleOwnerSteps.map((step, index) => (
                 <div key={index} className="bg-brand-cream rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100">
                   <div className="relative h-48">
-                    <img src={step.image} alt={step.title} className="w-full h-full object-cover" />
+                    <AspectRatio ratio={16/9} className="w-full h-full">
+                      <img src={step.image} alt={step.title} className="w-full h-full object-cover" />
+                    </AspectRatio>
                     <div className="absolute top-4 left-4 bg-brand-blue text-brand-cream text-lg font-bold h-10 w-10 rounded-full flex items-center justify-center">
                       {step.number}
                     </div>
@@ -119,7 +122,9 @@ const HowItWorksSection = () => {
               {mechanicSteps.map((step, index) => (
                 <div key={index} className="bg-brand-cream rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100">
                   <div className="relative h-48">
-                    <img src={step.image} alt={step.title} className="w-full h-full object-cover" />
+                    <AspectRatio ratio={16/9} className="w-full h-full">
+                      <img src={step.image} alt={step.title} className="w-full h-full object-cover" />
+                    </AspectRatio>
                     <div className="absolute top-4 left-4 bg-brand-blue text-brand-cream text-lg font-bold h-10 w-10 rounded-full flex items-center justify-center">
                       {step.number}
                     </div>
